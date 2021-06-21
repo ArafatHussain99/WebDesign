@@ -1,0 +1,33 @@
+h1{
+    color: rgb(90, 26, 26);
+    font-size: 70px;
+
+}
+h4{
+    color: rgb(184, 27, 66);
+    font-size: 20px;
+}
+body{
+    background-image: url("smc5.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+iframe{
+    background-size: cover;
+}
+pre{
+    color: white;
+    font-size: 25px;
+}
+table,tr,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table{
+    width: 65%;
+}
+td{
+    font-weight: bold;
+    font-style: italic;
+}
