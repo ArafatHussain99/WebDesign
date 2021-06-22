@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            Form
+        </title>
+        
+        <style>
+            
+            body{
+                background-image: url("Phoe2.png");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+            .bk { 
+                position: relative; 
+                height: 100vh;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-size: cover;
+                padding: 5px;
+            }
+            label{
+                position: relative;
+                color: black;  
+                font-size: 22px;
+                line-height: 0.9;
+                text-align: center;
+            }
+            
+        </style>
+        
+    </head>
+    <body>
+        <div class="bk">
+        <form id="form">
+            <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text">
+            </div>
+            <div>
+                <label>Password</label>
+                <input type="password">
+            </div>
+            
+            <div>
+                <label>Role</label>
+                <select>
+                    <option>Singer</option>
+                    <option>Writer</option>
+                    <option>Chilling</option>
+                </select>
+            </div>
+            <div>
+                <label>Gender</label>
+                <input type="radio" name="Gender">Male
+                <input type="radio" name="Gender">Female
+                <input type="radio" name="Gender">Hizra
+            </div>
+            <div>
+                <label>Favorite Color</label>
+                <input type="color">
+            </div>
+            <div>
+                <label>Date of Birth:</label>
+                <input type="date">
+            </div>
+            <div>
+                <label>Checkbox</label>
+                <input type="checkbox" name="cb">Smoke
+                <input type="checkbox" name="cb">Drink
+                <input type="checkbox" name="cb">Pray 5 times a day
+                <input type="checkbox" name="cb">Regular
+                <input type="checkbox" name="cb">Sleep early
+            </div>
+            <div>
+                <label>Upload your CV</label>
+                <input type="file">
+                
+            </div>
+        
+            <button type="submit">Submit</button>
+            <div id="div1"></div>
+        </form>
+    </div>
+    </body>
+    <script>
+        function show(){
+            let email=document.getElementById("email").value;
+            let html="<p>Email:"+email+"</p>"
+            document.getElementById("div1").innerHTML=html;
+        }
+    </script>
+</html>
